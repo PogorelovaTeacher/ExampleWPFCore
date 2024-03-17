@@ -1,1 +1,2 @@
 # ExampleWPFCore
+## используется .Net Core
