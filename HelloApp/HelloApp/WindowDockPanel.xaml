@@ -1,0 +1,202 @@
+﻿<Window x:Class="HelloApp.WindowDockPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloApp"
+        mc:Ignorable="d"
+        Title="WindowDockPanel" Height="800" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <DockPanel LastChildFill="True" Grid.Row="0">
+                <Button 
+                    xml:space="preserve" 
+                    Content="Button 2"
+                    FontSize="20"
+                    Margin="10" 
+                    DockPanel.Dock="Bottom"/> 
+                <RadioButton 
+                    DockPanel.Dock="Bottom"
+                    Content="4"
+                    GroupName="two"
+                    Checked="RadioButton_Checked_1"/>
+                <RadioButton 
+                    DockPanel.Dock="Bottom"
+                    Content="3"
+                    GroupName="two"
+                    Checked="RadioButton_Checked_1"/>
+                <RadioButton 
+                    DockPanel.Dock="Bottom"
+                    Content="2"
+                    Checked="RadioButton_Checked"/>
+                <RadioButton 
+                    DockPanel.Dock="Bottom"
+                    Content="1"
+                    Checked="RadioButton_Checked"/>
+                <Button 
+                    xml:space="preserve" 
+                    Content="Button 1"
+                    FontSize="20"
+                    Margin="10"
+                    DockPanel.Dock="Top"/>  
+                <CheckBox
+                    x:Name="CB1"
+                    IsThreeState="True"
+                    Content="Check me1"
+                    IsChecked="False"    
+                    FontSize="18"
+                    Height="20"
+                    Width="150" 
+                    Margin="10"
+                    Checked="CheckBox_Checked"
+                    Unchecked="CheckBox_Unchecked"
+                    Indeterminate="CheckBox_Indeterminate"
+                    DockPanel.Dock="Left"/>       
+                <CheckBox
+                    Content="Check me3"
+                    IsChecked="{x:Null}"
+                    FontSize="18"
+                    Height="20"
+                    Width="150" 
+                    Margin="10"
+                    DockPanel.Dock="Right"/>
+                <CheckBox
+                    Content="Check me2"
+                    IsChecked="True"
+                    FontSize="18"
+                    Height="20"
+                    Width="150" 
+                    Margin="10"/>
+            </DockPanel>
+        <WrapPanel 
+            Orientation="Vertical" 
+            Grid.Row="1"
+            ItemHeight="50"
+            ItemWidth="200"
+            Background="#12f080">
+            <Button Content="1" MouseEnter="Button_MouseEnter"/>
+            <Button x:Name="ButtonNumberTwo" Content="2"/>
+            <Button 
+                Content="3">
+                <Button.ToolTip>
+                    <ToolTip Background="#60AA4030" Width="150" Height="170" HasDropShadow="False">
+                        <StackPanel Orientation="Vertical">
+                            <Image Source="/Images/microscope.png"  />
+                            <TextBlock Text="foto" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </ToolTip>
+                </Button.ToolTip>
+            </Button>
+            <Popup 
+                x:Name="testPopup" 
+                AllowsTransparency="True"
+                Placement="Mouse"
+                MaxWidth="100"
+                StaysOpen="False">
+                <TextBlock
+                    TextWrapping="Wrap"
+                    Background="Aqua">
+                    <Run Foreground="Red" FontWeight="Bold" FontSize="14">Э</Run> 
+                    <Run FontSize="14">то элемент Popup, содержащий длинный текст</Run>
+                </TextBlock>
+            </Popup>
+        </WrapPanel>
+        <StackPanel
+            Grid.Row="2">
+            <ScrollViewer
+            Height="100"
+            CanContentScroll="True"
+            HorizontalScrollBarVisibility="Auto"
+            VerticalScrollBarVisibility="Auto">
+
+                <StackPanel>
+                    <Button MinHeight="60" Background="Red"/>
+                    <Button MinHeight="60" Background="Orange"/>
+                    <Button MinHeight="60" Background="Yellow"/>
+                    <Button MinHeight="60" Background="Green"/>
+                    <Button MinHeight="60" Background="Blue"/>
+                </StackPanel>
+            </ScrollViewer>
+        </StackPanel>
+        <Canvas 
+            x:Name="myCanvas"
+            HorizontalAlignment="Stretch"
+            Background="Coral"
+            Grid.Row="3">
+            <Button 
+            x:Name="MessageButton" 
+            Content="&lt;&quot;&amp;Press&quot;&gt;" 
+            FontSize="25" 
+            Foreground="DarkRed"
+            FontStyle="Normal"
+            FontStretch="Expanded"
+            FontWeight="Bold"
+            MaxHeight="100" 
+            MinHeight="25"
+            MaxWidth="600"
+            MinWidth="200"    
+            Margin="10"
+            Cursor="Hand"
+            Canvas.Top="40"
+            Canvas.Left="280"
+            Background="LemonChiffon" 
+            IsDefault="True"
+            Click="MessageButton_Click"/>
+            <Button 
+                x:Name="button1" 
+                Canvas.Top="100" 
+                Canvas.Left="280" 
+                Width="200"
+                HorizontalContentAlignment="Stretch">
+                <StackPanel>
+                    <TextBlock Text="Набор кнопкок" HorizontalAlignment="Center"/>
+                    <Button x:Name ="CancelButton" IsCancel="True" Background="Pink" Height="25" Content="Pink" Click="CancelButton_Click"/>
+                    <Button Background="LightGoldenrodYellow" Height="25" Content="Yellow"/>
+                    <Button Background="LightGreen" Height="25" Content="Green" />
+                </StackPanel>
+            </Button>
+            <GroupBox 
+                Header="Нота"
+                Canvas.Left="10"
+                Canvas.Top="20">
+                <StackPanel Margin="5">
+                    <RadioButton Content="do" Margin="0,0,0,5"/>
+                    <RadioButton Content="re" Margin="0,0,0,5"/>
+                    <Button Content="выбрать"/>
+                </StackPanel>
+            </GroupBox>
+            <Expander 
+                Canvas.Top="130"
+                Canvas.Left="10"
+                Header="Items">
+                <StackPanel>
+                    <CheckBox>clock</CheckBox>
+                    <CheckBox>vest</CheckBox>
+                    <CheckBox>bottle</CheckBox>
+                </StackPanel>
+            </Expander>
+            <Expander 
+                Canvas.Top="130"
+                Canvas.Left="100"
+                Expanded="Expander_Expanded"
+                Collapsed="Expander_Collapsed">
+                <Expander.Header>
+                    <Image 
+                        Source="/Images/рулон.png" 
+                        Height="30"/>
+                </Expander.Header>
+                <StackPanel>
+                    <CheckBox>linen</CheckBox>
+                    <CheckBox>cotton</CheckBox>
+                    <CheckBox>wool</CheckBox>
+                </StackPanel>
+            </Expander>
+        </Canvas>
+    </Grid>
+</Window>

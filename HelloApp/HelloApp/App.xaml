@@ -1,0 +1,18 @@
+﻿<Application x:Class="HelloApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:HelloApp"
+             xmlns:col="clr-namespace:System.Collections;assembly=mscorlib"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!--<ResourceDictionary Source="/Resources/DictionaryBrushStyles.xaml"/>-->
+                <ResourceDictionary Source="/Resources/DictionaryButtons.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <SolidColorBrush Color="LimeGreen" x:Key="limeButton" />
+        </ResourceDictionary>
+         
+    </Application.Resources>
+</Application>

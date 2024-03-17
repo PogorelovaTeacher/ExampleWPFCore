@@ -1,0 +1,20 @@
+﻿HelloApp
+1.0.0.0
+
+winexe
+C#
+.cs
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\
+HelloApp
+none
+false
+TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\App.xaml
+91314705289
+
+16-928618731
+192-1533232326
+MainWindow.xaml;Resources\DictionaryBrushStyles.xaml;Resources\DictionaryButtons.xaml;WindowCommand.xaml;WindowDataGrid.xaml;WindowDockPanel.xaml;WindowImage.xaml;WindowListBox.xaml;WindowResource.xaml;
+
+True
+

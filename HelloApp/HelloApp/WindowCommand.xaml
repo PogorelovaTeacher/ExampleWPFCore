@@ -1,0 +1,146 @@
+﻿<Window x:Class="HelloApp.WindowCommand"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloApp"
+        xmlns:cc="clr-namespace:HelloApp.Classes"
+        mc:Ignorable="d"
+        Title="WindowCommand" Height="650" Width="1000">
+    <Window.CommandBindings>
+        <CommandBinding Command="cc:WindowCommands.Exit" Executed="Exit_Executed"/>
+    </Window.CommandBindings>
+    <Grid>
+        <DockPanel>
+            <Menu
+                DockPanel.Dock="Top">
+                <MenuItem Header="File">
+                    <MenuItem
+                        Header="Close"/>
+                </MenuItem>
+                <MenuItem Header="Edit">
+                    <MenuItem 
+                        Header="Copy"
+                        CommandTarget="{Binding ElementName=myTextBox}"
+                        Command="Copy"/>
+                    <MenuItem 
+                        Header="Paste"
+                        CommandTarget="{Binding ElementName=myTextBox}"
+                        Command="Paste"/>
+                </MenuItem>
+            </Menu>
+            <TextBlock
+                Height="70"               
+                DockPanel.Dock="Top">
+                <TextBlock.Background>
+                    <VisualBrush 
+                        Visual="{Binding ElementName=but1}"
+                        Viewbox="0.4,0,0.7,1"/>
+                </TextBlock.Background>
+            </TextBlock>
+            <Button 
+                x:Name="ButtonExit" 
+                DockPanel.Dock="Bottom"
+                Height="30" 
+                Content="Выход"
+                Command="cc:WindowCommands.Exit"/>
+            <Button
+                DockPanel.Dock="Bottom"
+                Height="100">
+                <Button.Content>
+                    <TextBlock 
+                        Text="Roll" 
+                        FontSize="20"
+                        FontWeight="Black"
+                        Foreground="Blue"
+                        />
+                </Button.Content>
+                <Button.Background>
+                    <ImageBrush
+                        ImageSource="/Images/right-arrow.png"
+                        Stretch="Uniform"
+                        Viewport="0,0,0.5,0.5"
+                        TileMode="FlipXY"/>
+                </Button.Background>
+            </Button>
+            <Button
+                x:Name="but1"
+                DockPanel.Dock="Bottom"
+                Height="100">
+                <Button.Content>
+                    <TextBlock 
+                        Text="Roll" 
+                        FontSize="20"
+                        FontWeight="Black"
+                        Foreground="Blue"
+                        FlowDirection="RightToLeft"
+                        Width="200"/>
+                </Button.Content>
+                <Button.Background>
+                    <ImageBrush
+                        ImageSource="/Images/рулон.png"
+                        Stretch="Uniform"
+                        Viewbox="0,0.44,1,0.17"/>
+                </Button.Background>
+            </Button>
+            <TextBox 
+                x:Name="TextBoxLeft"
+                FontSize="25"
+                FontWeight="ExtraBold"
+                Text="AbCdiFgKlMnOp"
+                DockPanel.Dock="Left"
+                Width="300">
+                <TextBox.Background>
+                    <LinearGradientBrush
+                        StartPoint="0.5,1"
+                        EndPoint="0.5,0">
+                        <GradientStop Color="Aqua" Offset="1"/>
+                        <GradientStop Color="Bisque" Offset="0"/>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+                <TextBox.Foreground>
+                    <LinearGradientBrush>
+                        <GradientStop Color="Blue" Offset="1" />
+                        <GradientStop Color="Red" Offset="0.5" />
+                        <GradientStop Color="Yellow" Offset="0" />
+                    </LinearGradientBrush>
+                </TextBox.Foreground>
+            </TextBox>
+           
+            <Ellipse 
+                Width="60" 
+                Height="60"
+                Margin="3">
+                <Ellipse.Fill>
+                    <RadialGradientBrush RadiusX="0.6" RadiusY="0.8" GradientOrigin="0.3,0.3">
+                        <GradientStop Color="Red" Offset="1" />
+                        <GradientStop Color="White" Offset="0" />
+                    </RadialGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <TextBox 
+                x:Name="TextBoxRight"
+                FontSize="50"
+                FontWeight="ExtraBold"
+                Text="AbCdiFgKlMnO"
+                DockPanel.Dock="Right">
+                <TextBox.Background>
+                    <RadialGradientBrush
+                        RadiusX="0.6"
+                        RadiusY="0.6"
+                        GradientOrigin="0.5,0.5">
+                        <GradientStop Color="Aqua" Offset="1"/>
+                        <GradientStop Color="Bisque" Offset="0"/>
+                    </RadialGradientBrush>
+                </TextBox.Background>
+                <TextBox.Foreground>
+                    <RadialGradientBrush Center="0.4,0.4"  SpreadMethod="Reflect">
+                        <GradientStop Color="Blue" Offset="1" />
+                        <GradientStop Color="Red" Offset="0.5" />
+                        <GradientStop Color="Yellow" Offset="0" />
+                    </RadialGradientBrush>
+                </TextBox.Foreground>
+            </TextBox>
+        </DockPanel>
+    </Grid>
+</Window>

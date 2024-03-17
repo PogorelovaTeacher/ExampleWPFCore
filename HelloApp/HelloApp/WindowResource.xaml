@@ -1,0 +1,210 @@
+﻿<Window x:Class="HelloApp.WindowResource"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloApp"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="WindowResource" Height="650" Width="800">
+    <Window.Resources>
+        <local:Phone1 x:Key="Telephon" Name="tel123" Price="21000"/>
+        <sys:DateTime x:Key="DateTimeSource">2/8/2022</sys:DateTime>
+        <local:DataTimeToDateConverter x:Key="DataConverter"/>
+        <ImageBrush
+            x:Shared="False"
+            x:Key="ImageStyle"
+            ImageSource="/Images/рулон.png"
+            Stretch="Uniform"
+            Viewbox="0,0.44,1,0.17"/>
+        <SolidColorBrush
+            x:Shared="False"
+            x:Key="RedStyle"
+            Color="Coral"/>
+        <LinearGradientBrush
+            x:Shared="False"
+            x:Key="LineGragietnStyle"
+            StartPoint="0.5,0.7"
+            EndPoint="0.5,0">
+            <GradientStop Color="BlueViolet" Offset="1"/>
+            <GradientStop Color="Bisque" Offset="0"/>
+        </LinearGradientBrush>
+        <RadialGradientBrush 
+            x:Shared="False"
+            x:Key="RadialGradientStyle"
+            RadiusX="0.6" 
+            RadiusY="0.8" 
+            GradientOrigin="0.3,0.3">
+            <GradientStop Color="Red" Offset="1" />
+            <GradientStop Color="White" Offset="0" />
+        </RadialGradientBrush>
+        <Button 
+            x:Shared="False"
+            x:Key="ButtonStyle">
+            <Button.Content>
+                <TextBlock 
+                        Text="Roll" 
+                        FontSize="20"
+                        FontWeight="Black"
+                        Foreground="{StaticResource LineGragietnStyle}"/>
+            </Button.Content>
+            <Button.Background>
+                <ImageBrush
+                        ImageSource="/Images/right-arrow.png"
+                        Stretch="Uniform"
+                        Viewport="0,0,0.5,0.5"
+                        TileMode="FlipXY"/>
+            </Button.Background>
+        </Button>
+        <Button
+            x:Key="ResButton"
+            x:Shared="False"
+            Height="30"
+            Width="200"
+            Margin="10"
+            Background="{StaticResource LineGragietnStyle}"
+            Click="Button_Click">
+        </Button>
+    </Window.Resources>
+    <Grid x:Name="mainGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button 
+            x:Name="buttonWithStyle"
+            Grid.Column="0"
+            Width="220"
+            Height="110"
+            Content="{StaticResource ButtonStyle}"
+            HorizontalContentAlignment="Stretch"
+            VerticalContentAlignment="Stretch"/>
+        <Button 
+            x:Name="buttonWithStyle1"
+            Grid.Column="1"
+            Width="200"
+            Height="50"
+            Content="{StaticResource ButtonStyle}"
+            HorizontalContentAlignment="Stretch"
+            VerticalContentAlignment="Stretch"/>
+        <StackPanel
+            Grid.Row="1"
+            Grid.Column="0">
+            <Button
+                x:Name="but1"            
+                Height="50"
+                Width="250"
+                Margin="5"
+                FontSize="30"
+                FontWeight="ExtraBold"
+                Content="Проба стиля"
+                Background="{StaticResource LineGragietnStyle}"
+                Click="but1_Click"/>
+            <Grid
+                DataContext="{DynamicResource Telephon}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBox
+                    x:Name="textBoxSource"
+                    Margin="5"
+                    FontSize="14"
+                    Grid.Row="0"
+                    Grid.Column="0"/>
+                <TextBox
+                    x:Name="TextBoxRecipient" 
+                    Margin="5"
+                    FontSize="14"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Text="{Binding ElementName=textBoxSource, 
+                                   Path=Text, 
+                                   UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBox
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Margin="5"
+                    FontSize="14"
+                    Text="{Binding RelativeSource={RelativeSource Mode=Self}, Path=Background, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBox
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Margin="5"
+                    FontSize="14"
+                    Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Grid}, Path=Background, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBlock
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Text="{Binding StringFormat={}{0} sale!, Source={StaticResource Telephon}, Path=Name, TargetNullValue=tovar}"/>
+                <TextBlock
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Text="{Binding StringFormat=Цена: {0}, Source={StaticResource Telephon}, Path=Price}"/>
+                <TextBlock
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Margin="5"
+                    Text="{Binding Name}"/>
+                <TextBlock
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    Margin="5"
+                    Text="{Binding Price}"/>
+                <TextBlock
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    Margin="5"
+                    Text="{Binding Source={StaticResource DateTimeSource}, 
+                                   Converter={StaticResource DataConverter}}"/>
+                <TextBlock
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    Margin="5"
+                    Text="{Binding Source={StaticResource DateTimeSource}, 
+                                   ConverterParameter=EN,
+                                   Converter={StaticResource DataConverter}}"/>
+            </Grid>
+            
+            <Button
+                x:Name="btSetBinding"
+                Content="SetBinding"
+                Margin="5"
+                Click="btSetBinding_Click"/>
+            <Button
+                x:Name="btClearBinding"
+                Content="ClearBinding"
+                Margin="5"
+                Click="btClearBinding_Click"/>
+            <Button ContentStringFormat="Operation {0}"
+                x:Name="btChangeSource"
+                Content="ChangeSource"
+                Margin="5"
+                Click="btChangeSource_Click"/>
+        </StackPanel>
+        
+        <StackPanel 
+            x:Name="stackPanelWithResButton"
+            Grid.Row="1"
+            Grid.Column="1">
+            <StaticResource ResourceKey="ResButton"/>
+            <StaticResource ResourceKey="ResButton"/>
+            <StaticResource ResourceKey="ResButton"/>
+            <StaticResource ResourceKey="DResButton"/>
+            
+            
+        </StackPanel>
+        
+    </Grid>
+</Window>

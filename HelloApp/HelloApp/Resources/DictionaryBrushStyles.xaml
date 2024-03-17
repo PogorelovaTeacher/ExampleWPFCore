@@ -1,0 +1,31 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ImageBrush
+            x:Shared="False"
+            x:Key="DImageStyle"
+            ImageSource="/Images/microscope.png"
+            Stretch="Uniform"
+            Viewbox="0,0,1,1"/>
+    <SolidColorBrush
+            x:Shared="False"
+            x:Key="DGreenStyle"
+            Color="LightGreen"/>
+    <LinearGradientBrush
+            x:Shared="False"
+            x:Key="DLineGragietnStyle"
+            StartPoint="0.5,0.7"
+            EndPoint="0.5,0">
+        <GradientStop Color="Orange" Offset="1"/>
+        <GradientStop Color="Bisque" Offset="0"/>
+    </LinearGradientBrush>
+    <RadialGradientBrush 
+            x:Shared="False"
+            x:Key="DRadialGradientStyle"
+            RadiusX="0.6" 
+            RadiusY="0.8" 
+            GradientOrigin="0.3,0.3">
+        <GradientStop Color="Purple" Offset="1" />
+        <GradientStop Color="White" Offset="0" />
+    </RadialGradientBrush>
+
+</ResourceDictionary>

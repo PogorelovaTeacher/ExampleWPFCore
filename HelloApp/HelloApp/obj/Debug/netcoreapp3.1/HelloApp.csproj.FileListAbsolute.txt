@@ -1,0 +1,72 @@
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\bin\Debug\netcoreapp3.1\HelloApp.exe
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\bin\Debug\netcoreapp3.1\HelloApp.deps.json
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\bin\Debug\netcoreapp3.1\HelloApp.runtimeconfig.json
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\bin\Debug\netcoreapp3.1\HelloApp.runtimeconfig.dev.json
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\bin\Debug\netcoreapp3.1\HelloApp.dll
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\bin\Debug\netcoreapp3.1\HelloApp.pdb
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\App.g.cs
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp_MarkupCompile.cache
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp_MarkupCompile.lref
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\MainWindow.baml
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.g.resources
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.GeneratedMSBuildEditorConfig.editorconfig
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.AssemblyInfoInputs.cache
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.AssemblyInfo.cs
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.csproj.CoreCompileInputs.cache
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.dll
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.pdb
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.genruntimeconfig.cache
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowDockPanel.g.cs
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowDockPanel.baml
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowListBox.g.cs
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowListBox.baml
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowDataGrid.g.cs
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowDataGrid.baml
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowImage.g.cs
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowImage.baml
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowCommand.g.cs
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowCommand.baml
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowResource.g.cs
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowResource.baml
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\Resources\DictionaryBrushStyles.baml
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\Resources\DictionaryButtons.baml
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\App.baml
+F:\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.csproj.AssemblyReference.cache
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\bin\Debug\netcoreapp3.1\HelloApp.exe
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\bin\Debug\netcoreapp3.1\HelloApp.deps.json
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\bin\Debug\netcoreapp3.1\HelloApp.runtimeconfig.json
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\bin\Debug\netcoreapp3.1\HelloApp.runtimeconfig.dev.json
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\bin\Debug\netcoreapp3.1\HelloApp.dll
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\bin\Debug\netcoreapp3.1\HelloApp.pdb
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.csproj.AssemblyReference.cache
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\Resources\DictionaryBrushStyles.baml
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\Resources\DictionaryButtons.baml
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowCommand.g.cs
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowDataGrid.g.cs
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowDockPanel.g.cs
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowImage.g.cs
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowListBox.g.cs
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowResource.g.cs
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp_MarkupCompile.cache
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp_MarkupCompile.lref
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowCommand.baml
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowDataGrid.baml
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowDockPanel.baml
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowImage.baml
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowListBox.baml
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\WindowResource.baml
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.g.resources
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.AssemblyInfoInputs.cache
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.AssemblyInfo.cs
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.csproj.CoreCompileInputs.cache
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.dll
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.pdb
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.genruntimeconfig.cache
