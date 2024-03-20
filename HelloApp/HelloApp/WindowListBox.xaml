@@ -159,8 +159,8 @@
                 VerticalAlignment="Top"
                 IsEditable="True"
                 StaysOpenOnEdit="True"
-                SelectionChanged="phonesList_SelectionChanged"
-                GotFocus ="ComboBox_GotFocus">
+                SelectionChanged="phonesList_SelectionChanged">
+                <!--GotFocus ="ComboBox_GotFocus"--> 
                 <TextBlock>LG Nexus 5X</TextBlock>
                 <TextBlock>Huawai Nexus 6P</TextBlock>
                 <TextBlock>iPhone 6S</TextBlock>
@@ -172,8 +172,8 @@
                 Height="60" 
                 Width="150" 
                 VerticalAlignment="Top"
-                Margin="10"
-                GotFocus ="ComboBox_GotFocus">
+                Margin="10">
+                <!--GotFocus ="ComboBox_GotFocus"-->
                 <ComboBoxItem IsSelected="True">
                     <StackPanel Orientation="Horizontal">
                         <Image 

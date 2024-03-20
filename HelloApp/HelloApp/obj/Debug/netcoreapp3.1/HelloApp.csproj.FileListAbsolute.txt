@@ -40,7 +40,6 @@ C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCor
 C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\bin\Debug\netcoreapp3.1\HelloApp.runtimeconfig.dev.json
 C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\bin\Debug\netcoreapp3.1\HelloApp.dll
 C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\bin\Debug\netcoreapp3.1\HelloApp.pdb
-C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.csproj.AssemblyReference.cache
 C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\Resources\DictionaryBrushStyles.baml
 C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\Resources\DictionaryButtons.baml
 C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\MainWindow.g.cs
@@ -70,3 +69,4 @@ C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCor
 C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.dll
 C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.pdb
 C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.genruntimeconfig.cache
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WPFCore\HelloApp\HelloApp\obj\Debug\netcoreapp3.1\HelloApp.sourcelink.json
