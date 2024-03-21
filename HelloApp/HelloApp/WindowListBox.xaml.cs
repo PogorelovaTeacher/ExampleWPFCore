@@ -53,7 +53,9 @@ namespace HelloApp
         private void phonesList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             ComboBox comboBox = (ComboBox)sender;
-            MessageBox.Show(((TextBlock)comboBox.SelectedItem).Text);
+            MessageBox.Show(comboBox.SelectedIndex.ToString());
+            //MessageBox.Show(((TextBlock)comboBox.SelectedItem).Text);
+
         }
 
         private void butNextTab_Click(object sender, RoutedEventArgs e)
@@ -179,5 +181,7 @@ namespace HelloApp
         {
             MessageBox.Show(sender.ToString() + "\n" + e.Source.ToString());
         }
+
+       
     }
 }

@@ -158,8 +158,10 @@
                 Height="30" 
                 VerticalAlignment="Top"
                 IsEditable="True"
+                IsReadOnly="False"
                 StaysOpenOnEdit="True"
-                SelectionChanged="phonesList_SelectionChanged">
+                SelectionChanged="phonesList_SelectionChanged"
+                >
                 <!--GotFocus ="ComboBox_GotFocus"--> 
                 <TextBlock>LG Nexus 5X</TextBlock>
                 <TextBlock>Huawai Nexus 6P</TextBlock>
