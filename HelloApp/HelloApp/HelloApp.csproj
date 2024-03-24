@@ -15,6 +15,7 @@
     <None Remove="Images\paste.png" />
     <None Remove="Images\paste1.png" />
     <None Remove="Images\right-arrow.png" />
+    <None Remove="Images\tool_curvature_icon.png" />
     <None Remove="Images\рулон.png" />
   </ItemGroup>
 
@@ -27,6 +28,7 @@
     <Resource Include="Images\paste.png" />
     <Resource Include="Images\paste1.png" />
     <Resource Include="Images\right-arrow.png" />
+    <Resource Include="Images\tool_curvature_icon.png" />
     <Resource Include="Images\рулон.png" />
   </ItemGroup>
 

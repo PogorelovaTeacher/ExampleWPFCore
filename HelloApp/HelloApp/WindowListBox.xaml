@@ -31,22 +31,22 @@
                     </MenuItem.Header>
                     <MenuItem Header="Open">
                         <MenuItem 
-                        Header="New Tab"
-                        Click="butNewTab_Click"/>
+                            Header="New Tab"
+                            Click="butNewTab_Click"/>
                         <MenuItem 
                         Header="Show"
                         Click="MenuItem_Click"/>
                     </MenuItem>
                     <Separator/>
                     <MenuItem 
-                    Header="Close"
-                    Click="butClose_Click"/>
+                        Header="Close"
+                        Click="butClose_Click"/>
                 </MenuItem>
                 <MenuItem 
-                Header="Edit"
-                Click="MenuItem_Click">
+                    Header="Edit"
+                    Click="MenuItem_Click">
                     <MenuItem.Icon>
-                        <Image Height="20" Source="/Images/right-arrow.png"/>
+                        <Image Height="20" Source="/Images/tool_curvature_icon.png"/>
                     </MenuItem.Icon>
                 </MenuItem>
             </Menu>

@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:HelloApp"
              xmlns:col="clr-namespace:System.Collections;assembly=mscorlib"
              xmlns:sys="clr-namespace:System;assembly=mscorlib"
-             StartupUri="WindowListBox.xaml">
+             StartupUri="WindowImage.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

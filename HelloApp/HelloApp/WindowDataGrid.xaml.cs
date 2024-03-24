@@ -29,7 +29,8 @@ namespace HelloApp
         {
             InitializeComponent();
             dataGridExample1.ItemsSource = phones;
-            phonesGrid.ItemsSource = phones;
+            phonesDataGrid.ItemsSource = phones;
+         
             gridPhone.DataContext = new PhoneDependency { Name = "white telephon", Price = 30000.5 };
             //gridPhone.DataContext = new Phone { Name = "white telephon", Price = 30000 };
 
@@ -49,8 +50,14 @@ namespace HelloApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Phone1 phone = (Phone1)phonesGrid.CurrentItem;
-            MessageBox.Show(phone.Name);
+            Phone1 phone;
+            if (phonesDataGrid.CurrentItem is Phone1)
+            {
+                phone = (Phone1)phonesDataGrid.CurrentItem;
+                MessageBox.Show(phone.Name);
+            }
+           
+            
         }
 
         private void sliderExample_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
@@ -79,5 +86,7 @@ namespace HelloApp
             //Phone phone = (Phone)gridPhone.DataContext;
             MessageBox.Show(phone.Price.ToString());
         }
+
+       
     }
 }

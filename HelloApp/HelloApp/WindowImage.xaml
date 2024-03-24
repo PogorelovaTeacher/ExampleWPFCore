@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HelloApp"
         mc:Ignorable="d"
-        Title="WindowImage" Height="480" Width="800">
+        Title="WindowImage" Height="600" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
@@ -22,9 +22,54 @@
                         DestinationFormat="Gray32Float"/>
                 </Image.Source>
             </Image>
-            <InkCanvas
+            <InkCanvas x:Name="inkCanvasExample"
                 Height="200"
-                Background="AliceBlue"/>
+                Background="AliceBlue"
+                >
+                <Button 
+                    Content="Button" 
+                    InkCanvas.Left="200" 
+                    InkCanvas.Top="50"/>
+            </InkCanvas>
+            <WrapPanel Orientation="Horizontal">
+                <RadioButton 
+                    Content = "Рисовать" 
+                    IsChecked="True"
+                    Click = "RadioButton_Click" 
+                    Margin="10"/>
+                <RadioButton 
+                    Content = "Стереть" 
+                    Click = "RadioButton_Click" 
+                    Margin="0 10 10 10"/>
+                <RadioButton 
+                    Content = "Удалить" 
+                    Click = "RadioButton_Click" 
+                    Margin="0 10 10 10"/>
+                <RadioButton 
+                    Content = "Выбрать" 
+                    Click = "RadioButton_Click" 
+                    Margin="0 10 10 0"/>
+                <RadioButton 
+                    Content = "Остановить операцию" 
+                    Click = "RadioButton_Click" 
+                    Margin="10"/>
+
+            </WrapPanel>
+            <TextBlock 
+                Background="Black"
+                Width="100"
+                Margin="5"
+                MouseUp="TextBlock_MouseUp"/>
+            <TextBlock 
+                Background="Blue"
+                Width="100"
+                Margin="5"
+                MouseUp="TextBlock_MouseUp"/>
+            <TextBlock 
+                Background="Red"
+                Width="100"
+                Margin="5"
+                MouseUp="TextBlock_MouseUp"/>
         </StackPanel>
         
         <StackPanel
